@@ -1,0 +1,11 @@
+
+#three-react-garden {
+  .ContextDialog {
+    display: block;
+    position: absolute;
+    box-shadow: $button-box-shadow;
+    background-color: $button-group-background;
+    padding: 20px;
+    z-index: 999;
+  }
+}

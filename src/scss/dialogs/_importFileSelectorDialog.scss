@@ -1,0 +1,31 @@
+
+#three-react-garden {
+  .ImportFileSelectorDialog {
+    z-index: 999;
+    width: 200px;
+    top: 150px;
+    left: 60px;
+    @media only screen and (min-width: $breakpoint_xs) {
+      width: 350px;
+      top: 150px;
+      left: 170px;
+    }
+
+    .inputRow {
+      width: 100%;
+      input {
+        width: 100%;
+      }
+    }
+    input {
+      background-color: $input-focus-background-color;
+      margin: 0 10px;
+      box-shadow: $button-box-shadow;
+    }
+    input:focus-within, input:focus {
+      outline: none;
+      border-bottom: solid 1px;
+    }
+
+  }
+}

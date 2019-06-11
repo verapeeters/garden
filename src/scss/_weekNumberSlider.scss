@@ -1,0 +1,44 @@
+
+#three-react-garden {
+  .sliderGroup {
+    width: 100%;
+    background-color: $button-group-background;
+    box-shadow: $button-box-shadow;
+    margin: 7px 0 7px 0;
+    @media only screen and (min-width: $breakpoint_xs) {
+      margin: 10px 0 10px 0;
+    }
+
+    .buttonBar {
+      float: left;
+      button, .buttonLink {
+        margin: 5px;
+      }
+    }
+    .sliderAndTitle {
+      height: 48px;
+      padding: 0 20px 0 60px;
+    }
+    .sliderRow {
+      input {
+        width: 100%;
+      }
+      input:active {
+        outline: none;
+      }
+      input:focus {
+        outline: none;
+      }
+    }
+    .PlayButtonSvg {
+      @media (hover: hover) {
+        margin-left: 4px;
+      }
+      @media (hover: none) {
+        margin-left: 2px;
+      }
+    }
+  }
+
+}
+

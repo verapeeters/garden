@@ -1,0 +1,26 @@
+#three-react-garden {
+  .NewPlantDialogFixed, .NewPlantDialogFloating {
+    text-align: left;
+    .allPlants {
+      overflow-x: hidden;
+      overflow-y: scroll;
+    }
+    .PlantRow {
+      float: left;
+      width: 100%;
+      margin: 8px;
+      .colGeneralTextButton {
+        margin: 0;
+        width: 55%;
+        button {
+          text-align: left;
+        }
+      }
+      .plantTimeLine {
+        position: relative;
+        float: left;
+        width: 45%;
+      }
+    }
+  }
+}

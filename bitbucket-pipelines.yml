@@ -1,0 +1,27 @@
+# This is a sample build configuration for JavaScript.  # Check our guides at https://confluence.atlassian.com/x/14UWN for more examples.  # Only use spaces to indent your .yml configuration.  # ----- # You can specify a custom docker image from Docker Hub as your build environment.
+image: node:9.11.1
+          
+pipelines:
+  custom:
+    garden_prod:
+      - step:
+          caches:
+            - node
+          script:
+            - npm install
+            - npm run-script build-css
+            - sed -i -e "s/_DEPLOY_TRYX_GARDEN_GA_CODE_/${_DEPLOY_TRYX_GARDEN_GA_CODE_PROD_}/" ./src/data/config.json
+            - npm run-script build
+            - npm run-script deployprod
+            - npm run-script invalidate-cloudfront-prod
+    garden_test:
+      - step:
+          caches:
+            - node
+          script:
+            - npm install
+            - npm run-script build-css
+            - sed -i -e "s/_DEPLOY_TRYX_GARDEN_GA_CODE_/${_DEPLOY_TRYX_GARDEN_GA_CODE_TEST_}/" ./src/data/config.json
+            - npm run-script build
+            - npm run-script deploytest
+            - npm run-script invalidate-cloudfront-test

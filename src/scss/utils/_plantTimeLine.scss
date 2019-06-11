@@ -1,0 +1,37 @@
+
+#three-react-garden {
+  .plantTimeLine {
+    /*margin: 0 0 0 10px;*/
+    .showColor {
+      float: left;
+      width: $basic-fontsize;
+      height: $basic-fontsize;
+    }
+    .plantProps {
+      float: left;
+      /*margin: 0 10px 0 7px;*/
+      margin: 0 8px;
+      span {
+        float: left;
+      }
+      .timeLineButton {
+        float: left;
+        width: 15px;
+        text-align: center;
+        border-radius: $button-border-radius;
+      }
+      .timeLineButton:active {
+        transform: scale(1.5, 1.5);
+        background-color: $primary;
+        color: $button-active-color;
+
+      }
+      @media (hover: hover) {
+        .timeLineButton:hover {
+          background-color: $primary;
+          color: $button-hover-color;
+        }
+      }
+    }
+  }
+}

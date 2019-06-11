@@ -1,0 +1,12 @@
+
+#three-react-garden {
+  .OkToResetDialog {
+    top: 80px;
+    left: 70px;
+    z-index: 999;
+
+    @media only screen and (min-width: $breakpoint_xs) {
+      left: 200px;
+    }
+  }
+}

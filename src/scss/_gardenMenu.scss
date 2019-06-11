@@ -1,0 +1,97 @@
+
+.outerMenuButton {
+  background-color: $primary;
+  color: $button-hover-color;
+  border-radius: 0;
+}
+
+.showMenu {
+  display: block;
+  visibility: visible;
+  animation-name: animation-menu-show-outermenu;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
+
+.hideMenu {
+  display: none;
+  visibility: hidden;
+}
+
+.App-header {
+  a, button {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    @media only screen and (min-width: $breakpoint_xs) {
+      left: 20px;
+    }
+    svg {
+      width: $hamburger-menu-button-height-xxs;
+      height: $hamburger-menu-button-height-xxs;
+      @media only screen and (min-width: $breakpoint_xs) {
+        width: $hamburger-menu-button-height;
+        height: $hamburger-menu-button-height;
+      }
+    }
+  }
+  a:hover, button:hover {
+    background-color: $button-hover-background-color;
+    color: $button-hover-color;
+  }
+}
+
+.dropdown-content-outer {
+  width: 220px;
+  @media only screen and (min-width: $breakpoint_xs) {
+    width: 270px;
+  }
+  padding: 50px 15px 50px 15px;
+  background-color: $background;
+  color: $primary;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  text-align: left;
+  box-shadow: $button-box-shadow;
+  z-index: 1;
+  font-size: $middle-fontsize;
+  overflow: scroll;
+  a, button {
+    position: relative;
+    top: 0;
+    left: 0;
+    @media only screen and (min-width: $breakpoint_xs) {
+      left: 0;
+    }
+    svg {
+      left: -8px;
+      top: -2px;
+      @media only screen and (min-width: $breakpoint_xs) {
+        left: -11px;
+        top: -4px;
+      }
+      @media (hover: none) {
+        left: -10px;
+      }
+
+    }
+
+  }
+}
+
+.dropdown-content {
+  margin: 10px 0;
+  font-size: $basic-fontsize;
+  a, button {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px 16px;
+  }
+}

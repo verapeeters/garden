@@ -1,0 +1,77 @@
+
+.App {
+  .App-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $primary;
+    width: 100%;
+    color: white;
+    box-shadow: $button-box-shadow-header;
+    z-index: 999;
+    height: $hamburger-menu-button-height-xxs;
+    padding: 1px;
+    @media only screen and (min-width: $breakpoint_xs) {
+      height: $hamburger-menu-button-height;
+      padding: 5px;
+    }
+  }
+  .App-title {
+    text-align: center;
+    font-weight: 100;
+    margin: 0;
+    color: $button-hover-color;
+    font-size: $middle-fontsize;
+    @media only screen and (min-width: $breakpoint_xs) {
+      font-size: $title-fontsize;
+    }
+  }
+
+  .App-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: $primary;
+    color: white;
+    box-shadow: $button-box-shadow-header;
+    z-index: 999;
+    height: 7px;
+    padding: 0;
+    @media only screen and (min-width: $breakpoint_xs) {
+      height: 15px;
+      padding: 5px;
+    }
+  }
+
+  .App-version {
+    float: right;
+    text-align: right;
+    font-size: $appversion-fontsize;
+    margin: 0 5px 0 0;
+    @media only screen and (min-width: $breakpoint_xs) {
+      margin: 0 20px 0 0;
+    }
+  }
+  .debuginfo {
+    position: relative;
+    float: left;
+    text-align: left;
+    font-size: $debug-fontsize;
+    margin: 0 20px 0 0;
+  }
+
+}
+
+#three-react-garden {
+  .gardenThreeWorld {
+    width: 100%;
+    background-color: $background;
+    //transition: height 1s;
+  }
+  .gardenThreeWorld canvas {
+    //transition: height 1s;
+  }
+
+
+}

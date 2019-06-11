@@ -1,0 +1,88 @@
+import React from 'react';
+
+// noinspection HtmlUnknownTarget
+export const TUTORIAL_TEXT = [
+    [<h3>Welcome to my Garden</h3>,
+        <div>Compose a colorful garden that's different week after week. </div>,
+        <img className="tutorial_img_full_width"  src='./tutorial_img/my_garden.png' alt="'select predefined gardens' in the top left menu. "/>,
+    ],
+    [<h3>Predefined gardens</h3>,
+        <div>Select one of the predefined gardens to <b>discover</b> what the tool can do. </div>,
+        <img width="130px" src='./tutorial_img/predefined_garden.png' alt="'select predefined gardens' in the top left menu. "/>,
+        <img className="tutorial_img_full_width" src='./tutorial_img/garden_week23.png' alt="'plenty week 23. "/>,
+    ],
+    [<h3>Move the camera</h3>,
+        <div>Move the camera in the garden-view:
+            <ul>
+                <li>scroll to zoom</li>
+                <li>left click to rotate</li>
+                <li>right click to move</li>
+            </ul>
+            <img className="tutorial_img_full_width" src='./tutorial_img/camera_position.png' alt=""/>,
+        </div>,
+    ],
+    [<h3>Time</h3>,
+        <div>Move the time forward with the <b>week-number-slider</b>.</div>,
+        <img className="tutorial_img_full_width" src='./tutorial_img/week_nr_slider.png' alt=""/>,
+        <img className="tutorial_img_full_width" src='./tutorial_img/garden_week30.png' alt="'plenty week 23. "/>,
+    ],
+    [<h3>Plant timeline</h3>,
+        <div>In a plant's <b>timeline</b> you can see when the plant grows and flowers.</div>,
+        <img  width="100px" src='./tutorial_img/plant_timeline.png' alt=""/>,
+        <div>Click on a plant's timeline to move the time.</div>,
+        <img className="tutorial_img_full_width" src='./tutorial_img/garden_week43.png' alt="'plenty week 23. "/>,
+    ],
+    [<h3>Plant Fiche and areas</h3>,
+        <div>Click on the plant's name to open a fiche with info for that plant.</div>,
+        <div>You see all the areas that contain this plant.</div>,
+        <img className="tutorial_img_full_width" src='./tutorial_img/plantfiche.png' alt=""/>,
+    ],
+    [<h3>Plant Fiche and areas</h3>,
+        <div>Modify the size and position for the areas, duplicate an area or create a new area with default
+            sizes. </div>,
+        <img className="tutorial_img_full_width" src='./tutorial_img/plantfiche2.png' alt=""/>,
+    ],
+    [<h3>Hide / Show areas and plants</h3>,
+        <div>Click on the eye-button next to the area to see where the area is <b>located in the garden-view</b>. </div>,
+        <div>If there are too many plants maybe you can not see this. You can <b>hide the plants</b> in the show/hide
+            dialog. </div>,
+        <img className="tutorial_img_full_width" src='./tutorial_img/areas.png' alt=""/>,
+    ],
+    [<h3>Lock camera</h3>,
+        <div>Lock the camera-motions to move the areas in the garden-view.</div>,
+        <div>Use the lock/unlock button at the bottom right to disable the camera movements.</div>,
+        <img width="50px"  src='./tutorial_img/lock_camera.png' alt=""/>,
+    ],
+    [<h3>Move areas</h3>,
+        <div>When the camera is locked, you can select visible area's and move and resize them.</div>,
+        <img  className="tutorial_img_full_width" src='./tutorial_img/move_areas.png' alt=""/>,
+    ],
+    [<h3>New plants</h3>,
+        <div>Add plants to your garden. </div>,
+        <div>Order the plant list so that it is easier to see which plant is best suited. </div>,
+        <img className="tutorial_img_full_width" src='./tutorial_img/add_garden.png' alt=""/>,
+        <div>Attention: if all known plants are used in your garden you don`t see new plants to add to your garden. </div>,
+        <div>if you are interested to add new plants, let me know: vera.peeters@tryx.com. </div>,
+    ],
+    [<h3>Load / Save</h3>,
+        <div>The garden you are working on is continuously stored in <b>local browser storage</b> (if you agree).</div>,
+        <div>You can also export the areas of a garden as a file and import it in another garden. See load/save menu in the top
+            left menu. </div>,
+        <div>Reset the entire garden to <b>clear the local storage</b> and restore all the defaults. </div>,
+        <img  className="tutorial_img_full_width" src='./tutorial_img/load_save.png' alt=""/>,
+    ],
+    [<h3>Camera positions</h3>,
+        <div>There are several predefined camera positions. See top left menu. </div>,
+        <div>You can give a name to the current camera position so that you can select it again later. </div>,
+        <img  className="tutorial_img_full_width" src='./tutorial_img/save_camera_pos.png' alt=""/>,
+    ],
+    [<h3>That's it.</h3>,
+        <div>Have fun! </div>,
+        <div>Contact me on vera.peeters@tryx.com</div>,
+        <img  width="290" src='./tutorial_img/thatsit.png' alt=""/>,
+    ],
+    [
+
+        <img  width="290" src='./tutorial_img/have_fun.png' alt=""/>,
+    ],
+];

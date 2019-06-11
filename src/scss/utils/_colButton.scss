@@ -1,0 +1,37 @@
+
+[class^=col] {
+  float: left;
+  /*margin: 5px;*/
+  text-align: left;
+}
+
+.colButton, .closeButton, .colRow {
+  width: 26px;
+  margin: 0;
+  position: relative;
+  top: 4px;
+  /*background-color: orange;*/
+  @media only screen and (min-width: $breakpoint_xs) {
+    top: 0;
+  }
+
+  button, .buttonLink {
+    height: $small-button-size;
+    width: $small-button-size;
+    svg {
+      left: -7px;
+      top: -1px;
+      position: relative;
+    }
+  }
+
+  button::before /*settings for animation*/
+  {
+    width: $small-button-animation-size;
+    height: $small-button-animation-size;
+    top: ($small-button-size - $small-button-animation-size)/2;
+    left: ($small-button-size - $small-button-animation-size)/2;
+    border-radius: $button-border-radius;
+  }
+
+}

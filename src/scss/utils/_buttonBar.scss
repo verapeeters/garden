@@ -1,0 +1,85 @@
+
+#three-react-garden {
+
+  .buttonBar {
+    float: right;
+    width: $large-button-size;
+    text-align: left;
+
+    button, .buttonLink {
+      float: left;
+      margin: 6px;
+      @media only screen and (min-width: $breakpoint_xs) {
+        margin: 10px;
+      }
+      background-color: $large-button-background-color;
+      box-shadow: $button-box-shadow;
+      height: $large-button-size;
+      width: $large-button-size;
+      @media (hover: hover) {
+        visibility: hidden;
+      }
+      a {
+        svg {
+          margin: 10px;
+        }
+      }
+
+    }
+    button {
+      svg {
+        @media (hover: none) {
+          position: relative;
+          left: -4px;
+        }
+      }
+    }
+    @media (hover: hover) {
+      button:nth-last-child(1) {
+        visibility: visible;
+      }
+    }
+
+    @media (hover: hover) {
+      button::before /*settings for animation*/
+      {
+        width: $large-button-animation-size;
+        height: $large-button-animation-size;
+        top: ($large-button-size - $large-button-animation-size)/2;
+        left: ($large-button-size - $large-button-animation-size)/2;
+        border-radius: $button-border-radius;
+      }
+    }
+    @media (hover: none) {
+      /* when no hover, buttonbar is activated on click and
+         in that case the focus is on the first button and
+         the animation is triggered. Very ugly.
+         To avoid that I simply don't animate when no hover */
+      button:focus:before {
+        visibility: hidden;
+      }
+    }
+
+    .buttonLink {
+      height: $large-button-size;
+      width: $large-button-size;
+      svg {
+        top: 0;
+      }
+    }
+    @media (hover: hover) {
+      button:hover, .buttonLink:hover {
+        background-color: $primary;
+        color: $button-hover-color;
+        a {
+          color: $button-hover-color;
+        }
+      }
+    }
+  }
+  @media (hover: hover) {
+    .buttonBar:hover button, .buttonBar:hover .buttonLink {
+      visibility: visible;
+    }
+  }
+}

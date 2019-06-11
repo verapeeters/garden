@@ -1,0 +1,86 @@
+
+#three-react-garden {
+
+  .PlantFicheFixed {
+    position: relative;
+    top: $plantListTop-xss;
+    height: $plantListHeight-xss;
+    background-color: $button-group-background;
+    box-shadow: $button-box-shadow;
+
+    .PlantPicture {
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+    .PlantFicheHeader {
+      width: 70%;
+      .PlantName {
+        font-size: $title-fontsize-xss;
+        margin: 1px;
+      }
+      .plantTimeLine {
+        margin: 5px 1px;
+      }
+    }
+    .PlantFicheContent {
+      /*background-color: greenyellow;*/
+      margin: 15px 15px 0 0;
+      @media (hover: hover) {
+        margin: 15px 15px 0 15px;
+      }
+    }
+    .buttonBar {
+      bottom: 8px;
+    }
+    .closeButton {
+      top: 0;
+    }
+
+    .AllAreasForPlant {
+      max-height: 138px;
+      width: 90%;
+
+      .OneAreaForPlant {
+        min-height: 24px;
+        .colButton {
+          top: 0;
+          @media (hover: hover) {
+            top: -3px;
+          }
+          button {
+            width: $small-button-size-fixed;
+            height: $small-button-size-fixed;
+            svg {
+              left: -9px;
+              @media (hover: hover) {
+                left: -4px;
+                top: -1px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .AreaInfoTitle {
+      .AreaInfoColTitle {
+        padding: 0 8px 0 0;
+        @media (hover: hover) {
+          padding: 0 14px 0 0;
+        }
+      }
+    }
+    .AreaInfo, .AreaInfoTitle  {
+      width: 65%;
+      @media (hover: hover) {
+        width: 75%;
+      }
+      .AreaInfoCol {
+        input {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

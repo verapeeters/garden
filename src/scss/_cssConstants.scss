@@ -1,0 +1,64 @@
+/* https://coolors.co/080808-3e4237-9bc4bc-d3ffe9-8ddbe0 */
+$basic-fontsize: 14px;
+$title-fontsize: 18px;
+$title-fontsize-xss: 14px;
+$middle-fontsize: 14px;
+$debug-fontsize: 10px;
+$appversion-fontsize: 6px;
+
+$shade: rgba(0, 0, 0, 0.3);
+$primary: darkslategrey;
+$background: #f1f4f4;
+
+$button-group-background: #ffffff;
+
+$button-color: $primary;
+$button-active-color: #8DDBE0;
+$button-inactive-color: rgba(47, 79, 79, 0.2);
+
+$button-background-color: transparent;
+$large-button-background-color: #8DDBE0;
+
+$button-hover-color: #D3FFE9;
+$button-hover-background-color: $primary;
+$button-menu-hover-background-color: #D3FFE9;
+$button-ripple-color: #D3FFE9;
+
+$input-focus-background-color: rgba(219, 255, 235, 0.7);
+
+$animation-show-one-area-background-color: $large-button-background-color;
+
+$button-border-radius: 50%;
+$button-box-shadow: 1px 1px 5px 1px $shade;
+$button-box-shadow-active: 0 1px #3E4237;
+$button-box-shadow-header: 2px 2px 2px $shade;
+$button-box-shadow-global-buttonbar-hover: 0px 0 5px 5px rgba(219, 255, 235, 0.4);
+$button-shadow: 1px 1px 1px 1px $shade;
+
+$small-button-size: 20px;
+$small-button-size-fixed: 26px;
+$small-button-animation-size: 32px;
+$large-button-size: 38px;
+$large-button-animation-size: 48px;
+$close-button-size: 22px;
+$close-button-size-fixed: 24px;
+
+$flower-background: #96cccf;
+$flower-border-radius: 50%;
+
+$text-button-border-radius: 10px;
+
+$breakpoint_lg: 1200px;
+$breakpoint_md: 996px;
+$breakpoint_sm: 677px;
+$breakpoint_xs: 480px;
+$breakpoint_xxs: 0;
+
+$plantListHeight: 260px;
+$plantListHeight-xss: 210px;
+/*$plantListTop-xss: 0 - $plantListHeight-xss - 15px;*/
+$plantListTop-xss: - 8px;
+$plantListTop-xss-new-planlist: 7px; /*no idea why this is not the same :-( */
+
+$hamburger-menu-button-height-xxs: 26px;
+$hamburger-menu-button-height: 30px;

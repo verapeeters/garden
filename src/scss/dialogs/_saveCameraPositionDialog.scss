@@ -1,0 +1,29 @@
+
+#three-react-garden {
+  .SaveCameraPositionDialog {
+    z-index: 999;
+    width: 220px;
+    top: 250px;
+    left: 60px;
+    @media only screen and (min-width: $breakpoint_xs) {
+      width: 365px;
+      top: 250px;
+      left: 170px;
+    }
+
+    .inputRow {
+      width: 100%;
+    }
+    input {
+      background-color: $input-focus-background-color;
+      margin: 0 10px;
+      box-shadow: 0 0 0 0;
+      border: none;
+
+    }
+    input:focus-within, input:focus {
+      outline: none;
+      border-bottom: solid 1px;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+
+#three-react-garden {
+  .PlantListContainer {
+    position: relative;
+    width: 100%;
+    background-color: $button-group-background;
+    box-shadow: $button-box-shadow;
+    margin: 7px 0 7px 0;
+    height: $plantListHeight-xss;
+    @media only screen and (min-width: $breakpoint_xs) {
+      margin: 10px 0 10px 0;
+      height: $plantListHeight;
+    }
+
+  }
+  .PlantList {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 6px;
+    @media only screen and (min-width: $breakpoint_xs) {
+      margin: 8px;
+    }
+
+    .PlantRow {
+      float: left;
+      width: 100%;
+      margin: 8px;
+
+      .colGeneralTextButton {
+        width: 80%;
+        margin: 5px;
+        /*background-color: yellowgreen;*/
+        button {
+          text-align: left;
+        }
+        @media only screen and (min-width: $breakpoint_xs) {
+          width: 40%;
+          margin: 0;
+        }
+        @media only screen and (min-width: $breakpoint_sm) {
+          width: 50%;
+        }
+        @media only screen and (min-width: $breakpoint_md) {
+          width: 45%;
+        }
+        @media only screen and (min-width: $breakpoint_lg) {
+          width: 35%;
+        }
+
+      }
+      .colPlantTimeline {
+        width: 80%;
+        /*background-color: aqua;*/
+        margin: 0 0 0 44px;
+        @media (hover: hover) {
+          margin: 0 0 0 40px;
+        }
+        @media only screen and (min-width: $breakpoint_xs) {
+          width: 40%;
+          margin: 0;
+        }
+        @media only screen and (min-width: $breakpoint_sm) {
+          width: 35%;
+        }
+        @media only screen and (min-width: $breakpoint_md) {
+          width: 40%;
+        }
+        @media only screen and (min-width: $breakpoint_lg) {
+          width: 45%;
+        }
+      }
+    }
+    @media (hover: hover) {
+      .PlantRow:hover .buttonNotActive {
+        visibility: visible;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+
+#three-react-garden {
+  .OrderPlantListDialog {
+    top: 380px;
+    right: 70px;
+
+    @media only screen and (min-width: $breakpoint_xs) {
+      right: 70px;
+    }
+  }
+}

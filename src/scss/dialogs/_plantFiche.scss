@@ -1,0 +1,106 @@
+
+#three-react-garden {
+  .PlantFicheFixed, .PlantFicheFloating {
+    .PlantPicture {
+      position: relative;
+      float: left;
+      margin: 10px;
+      border-radius: $flower-border-radius;
+      background-color: $flower-background;
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+    .PlantFicheHeader {
+      position: relative;
+      float: left;
+      text-align: left;
+      padding: 10px;
+      .PlantName {
+        width: 100%;
+      }
+      .plantTimeLine {
+      }
+    }
+    .PlantFicheContent {
+    }
+    .buttonBar {
+      position: absolute;
+      right: 22px;
+    }
+    .closeButton {
+    }
+    .AllAreasForPlant {
+      overflow-x: hidden;
+      overflow-y: scroll;
+      /*background-color: yellow;*/
+
+      .OneAreaForPlantTitle {
+        height: 20px;
+        .colButton {
+          /*background-color: aqua;*/
+        }
+      }
+      .OneAreaForPlant {
+        animation: animation-show-one-area-line 1s;
+        margin: 3px 0;
+        .colButton {
+          /*background-color: aqua;*/
+          button {
+            animation: animation-show-one-area-line 1s;
+            /*background-color: orange;*/
+          }
+        }
+      }
+      @media (hover: hover) {
+        button:hover {
+          background-color: $button-hover-background-color;
+        }
+      }
+    }
+  }
+  .AreaInfoTitle {
+    /*background-color: gold;*/
+    .AreaInfoColTitle {
+      padding: 0 14px 0 0;
+      /*background-color: palegreen;*/
+    }
+  }
+  .AreaInfo, .AreaInfoTitle {
+    float: left;
+    height: 10px;
+    width: 70%;
+    /*background-color: cornflowerblue;*/
+    .AreaInfoCol, .AreaInfoColTitle {
+      float: left;
+      width: 25%;
+      text-align: right;
+      /*background-color: pink;*/
+      input {
+        animation: animation-show-one-area-line 1s;
+        background-color: transparent;
+        box-shadow: 0 0 0 0;
+        border: none;
+        font-size: $basic-fontsize;
+        text-align: right;
+      }
+      input:focus-within, input:focus {
+        outline: none;
+        background-color: $input-focus-background-color;
+        border-bottom: solid 1px;
+      }
+
+    }
+  }
+  @media (hover: hover) {
+    .OneAreaForPlant:hover {
+      background-color: $input-focus-background-color;
+    }
+    .OneAreaForPlant:hover .buttonNotActive {
+      visibility: visible;
+    }
+  }
+
+}
+

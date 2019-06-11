@@ -1,0 +1,13 @@
+
+#three-react-garden {
+  .CookieLawDialog {
+    top: 50px;
+    left: 70px;
+    z-index: 1000;
+
+    @media only screen and (min-width: $breakpoint_xs) {
+      top: 50px;
+      left: 270px;
+    }
+  }
+}

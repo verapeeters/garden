@@ -1,0 +1,51 @@
+
+#three-react-garden {
+  .GeneralDialog {
+    display: block;
+    position: absolute;
+    width: 230px;
+    box-shadow: $button-box-shadow;
+    z-index: 10;
+    background-color: $button-group-background;
+    text-align: left;
+    padding: 20px;
+    .textdiv {
+      margin: 20px 0;
+      /*background-color: cornflowerblue;*/
+    }
+    .title {
+      margin: 20px 0;
+      font-size: $title-fontsize;
+    }
+    .colGeneralTextButton {
+      float: left;
+      margin: 5px 0;
+      width: auto;
+      button {
+        text-align: left;
+        /*
+        padding: 3px 3px;
+        margin: 2px 0 2px -3px;
+        */
+        @media only screen and (min-width: $breakpoint_xs) {
+/*          margin: 2px 0 2px -3px;*/
+        }
+      }
+    }
+    .generalActionButton {
+      button {
+        padding: 7px;
+        width: 100%;
+        border-radius: 3px;
+        background-color: $large-button-background-color;
+        box-shadow: $button-box-shadow;
+      }
+      @media (hover: hover) {
+        button:hover {
+          background-color: $primary;
+          color: $button-hover-color;
+        }
+      }
+    }
+  }
+}

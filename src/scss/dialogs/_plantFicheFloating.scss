@@ -1,0 +1,65 @@
+
+#three-react-garden {
+
+  .PlantFicheFloating {
+    min-height: 240px;
+    width: 400px;
+    padding: 0;
+
+    .PlantPicture {
+      img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+    .PlantFicheHeader {
+      .PlantName {
+        font-size: $title-fontsize;
+        margin: 6px;
+      }
+      .plantTimeLine {
+        margin: 5px 8px;
+      }
+    }
+    .PlantFicheContent {
+      margin: 25px 25px 0 25px;
+    }
+    .buttonBar {
+      bottom: 0;
+    }
+
+    .AllAreasForPlant {
+      max-height: 200px;
+      width: 90%;
+
+      .OneAreaForPlant {
+        min-height: 30px;
+        .colButton {
+          button {
+            top: -1px;
+            svg {
+              left: -7px;
+              top: -1px;
+            }
+          }
+        }
+      }
+    }
+    .AreaInfoTitle {
+      width: 73%;
+      .AreaInfoColTitle {
+        padding: 0 12px 0 0;
+      }
+      }
+    .AreaInfo {
+      /*background-color: cornflowerblue;*/
+      width: 73%;
+
+      .AreaInfoCol {
+        input {
+          width: 45px;
+        }
+      }
+    }
+  }
+}

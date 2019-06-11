@@ -1,0 +1,21 @@
+
+#three-react-garden {
+
+  .colGeneralTextButton {
+    width: 100%;
+    button {
+      color: $primary;
+      border-radius: $text-button-border-radius;
+      border: none;
+    }
+    button:hover {
+      background-color: $button-hover-background-color;
+      color: $button-hover-color;
+    }
+    button::before /*settings for animation*/ {
+      width: 50px;
+      height: 20px;
+    }
+
+  }
+}
