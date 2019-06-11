@@ -4,6 +4,7 @@ See also [README-create-react-app.md](README-create-react-app.md).
 ## Garden
 
 Purpose: to see the different color schema's of a selection of plants over time
+
 Demo/test:  
 * https://garden.tryx.com/
 * http://test-garden.tryx.com/
